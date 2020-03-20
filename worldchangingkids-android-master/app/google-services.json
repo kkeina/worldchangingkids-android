@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "37880290536",
+    "firebase_url": "https://plant-a-garden-of-kindne-a974d.firebaseio.com",
+    "project_id": "plant-a-garden-of-kindne-a974d",
+    "storage_bucket": "plant-a-garden-of-kindne-a974d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37880290536:android:f413182499c5cf07",
+        "android_client_info": {
+          "package_name": "com.world_changingkids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37880290536-64ms1lvqjolp0ss8vurb502n9cl3gnhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.world_changingkids",
+            "certificate_hash": "90728712fd4aac229bac79888c627787c01f6183"
+          }
+        },
+        {
+          "client_id": "37880290536-ld75v8ajmkdo9m5rcvktmqfaev3ffvie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.world_changingkids",
+            "certificate_hash": "4956f490bbf22f81d5d0b0b1093ebc18d82b6c86"
+          }
+        },
+        {
+          "client_id": "37880290536-s3c6tjucdh7kccl8j7kh4osrpv2huois.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Ip_j6Q8eQ2RZKI8_Xn3KVhH0BPqCqOg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37880290536-s3c6tjucdh7kccl8j7kh4osrpv2huois.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- Fixed upper-right corner profile button -->
+    <ImageButton
+        android:id="@+id/corner_profile_button"
+        android:layout_width="97dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/corner_profile_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/corner_profile_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/main_activity_profile_name"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:autoSizePresetSizes="@array/autosize_text_sizes"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+    <!-- Nav Host Fragment -->
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:barrierAllowsGoneWidgets="false"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_button_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="5"
+        app:navGraph="@navigation/nav_graph" />
+
+
+
+    <!-- Bottom Container -->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/bottom_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:id="@+id/all_buttons_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/hide_button_bar"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_activity_hide_nav_bar"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/home_button"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_activity_home_purple"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hide_button_bar"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/home_profile_button"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_activity_profile_yellow"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/home_acts_of_kindness_button"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_activity_acts_yellow"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_profile_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/bgm"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bgm"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/home_profile_button"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/show_buttons_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/show_bottom_nav_bar_button"
+                android:layout_width="@dimen/bottom_button_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bottom_button_bar_spacing"
+                android:layout_marginStart="@dimen/bottom_button_bar_spacing"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/main_activity_show_nav_bar"/>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <FrameLayout
+        android:id="@+id/container_act_of_kindness_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:elevation="2dp"
+        android:padding="15dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

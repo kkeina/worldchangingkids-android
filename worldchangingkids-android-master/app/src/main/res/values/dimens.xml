@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="bottom_button_width">50dp</dimen>
+    <dimen name="bottom_button_bar_spacing">20dp</dimen>
+    
+    <dimen name="aok_list_card_padding">60dp</dimen>
+</resources>

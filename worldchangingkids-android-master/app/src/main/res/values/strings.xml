@@ -1,0 +1,193 @@
+<resources>
+
+    <!--Main app Activity-->
+    <string name="app_name">World-Changing Kids</string>
+    <string name="app_title_bar">World-Changing Kids</string>
+    <string name="button">Done</string>
+    <string name="good_deed_message">Choose an Act of Kindness to Perform</string>
+    <string name="main_activity_profile_name">Hi, %s</string>
+
+    <!--Login Page-->
+    <string name="login_username_title">Login:</string>
+    <string name="login_title">Welcome</string>
+    <string name="login_password_title">Password:</string>
+    <string name="login_name_placeholder">Enter your email</string>
+    <string name="login_password_placeholder">Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_user_button">Create new user</string>
+    <string name="create_account_dialog_title">Create New Account</string>
+    <string name="account_exists_message">Login already exists</string>
+    <string name="login_failed_message">Login or password does not match</string>
+    <string name="user_ForgotPassword">Forgot password?</string>
+
+
+    <!--Select Profile Page-->
+    <string name="select_profile_title">Who\'s Changing the World?</string>
+    <string name="instructions">You currently have no children.
+        <br /> To add children please click on the yellow add button
+    </string>
+
+    <!--Create Account Page-->
+    <string name="create_account_title">Create Account</string>
+    <string name="user_first_name_placeholder">First Name</string>
+    <string name="user_last_name_placeholder">Last Name</string>
+    <string name="create_account_username">Email</string>
+    <string name="create_account_password">Password</string>
+    <string name="create_button">Create</string>
+
+    <!--Feature/Home Page-->
+    <string name="error_title_wrong_action">Maybe you clicked the wrong button ?</string>
+    <string name="error_message">You are already on the main menu screen</string>
+
+    <!-- User Profile Page-->
+    <string name="user_level">Level</string>
+    <string name="level_legendary">Legendary</string>
+    <string name="user_name">Name :</string>
+    <string name="user_name_placeholder">Full Name</string>
+    <string name="user_age">Age:</string>
+    <string name="user_age_placeholder">Age</string>
+    <string name="user_grade">Grade:</string>
+    <string name="user_grade_placeholder">Grade</string>
+    <string name="user_about_info">About:</string>
+    <string name="user_about_placeholder">Tell Me About yourself</string>
+    <string name="completed_task">Completed Task</string>
+
+    <!-- Avatar Page-->
+    <string name="avatar_pants_title">Pants</string>
+    <string name="avatar_shirt_title">Shirt</string>
+    <string name="avatar_head_title">Head</string>
+    <string name="avatar_all_title">All</string>
+    <string name="avatar_save_button">Save Avatar</string>
+
+    <!-- Act Of Kindness Page-->
+    <string name="community_filter">Community</string>
+    <string name="cooking_filter">Cooking</string>
+    <string name="art_filter">Art</string>
+    <string name="family_filter">Family</string>
+    <string name="giving_filter">Giving</string>
+    <string name="completed_filter">Acts Completed</string>
+
+    <!-- Act Of Kindness Card Page-->
+    <string name="act_completed_message">Congratulations you have completed this Act of Kindness.</string>
+    <string name="audio_error_exception">Error on record</string>
+    <string name="label_view_act">View Act</string>
+    <string name="aok_list_item_title">#%d %s</string>
+    <string name="aok_details_item_title">Act #%d %s</string>
+    <string name="aok_details_notes_hint">Notes</string>
+
+    <!-- Add Profile Page-->
+    <string name="create_child_account">About You</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="grade">Grade</string>
+    <string name="savebtn">Save</string>
+
+    <!-- Edit Profile Page-->
+    <string name="edit_profile">Profile Information</string>
+    <string name="editbtn">Edit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="placeholder_short">LOREM IPSUM</string>
+    <string name="placeholder_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </string>
+    <string name="placeholder_long_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!-- Note to adults Page-->
+    <string name="noteToAdultsTitle">  For the adults who love and support this App</string>
+    <string name="noteToAdultsNotes">At its heart, this app is all about taking action – a collection of simple Acts of Kindness that you can do with your children to make your community a friendlier place.
+\n
+\nBut before we jump right into the action part, I wanted to share with you some beliefs that helped the app grow from ideas into reality, and some hopes that I have for it – ways in which it will help you make changes in your community for the better.
+\n
+\nPLANTING: THE IDEA SEEDS
+\n
+\nThis Garden of Kindness app grew from seeds filled with the following beliefs and ideas from my own personal experience and observations:
+\n
+\n1. Everyone wants to be included in a community – we all want to feel that we are part of something that is bigger than just ourselves.
+\n
+\n2. We need to spend less time on our electronic devices and more time interacting with one another face to face. This is true for both parents and children. Giving our children more opportunities to interact with other children in real life will increase their ability to create and maintain strong relationships. Giving our children more of our undivided attention and time will increase their feelings of self-worth and self-confidence.
+\n
+\n3. We need to drive less and get outside to walk and bike more. This forces us to slow life down a bit. When we slow life down, we make time to stop and visit with our neighbours. By stopping for a quick chat with someone on the sidewalk, we will most likely learn something about what is going on in their life or something new about the world. We might even be able to take some time to go to the park to let the kids play – this can be done spontaneously, without the need for scheduling a play date.
+\n
+\n4. Making an effort to get outside more as a family will result in both parents and children getting more exercise and will help make the whole family healthier.
+\n
+\n5. Being out in the community also gives parents the opportunity to speak with each other – to share parenting experiences and advice, to have other people validate or perhaps change the way we are feeling. Parenting is super hard and the more people we have in our support network the better.
+\n
+\n6. Knowing the kids in our neighbourhood, and creating an environment where our children see a number of familiar faces each time they go out to play, will decrease shyness and increase confidence in all of our children.
+\n
+\n7. Children benefit immensely from knowing that there are a number of adults in their community that they can turn to if they ever need anything.
+\n
+\n8. Having children of different ages interacting and playing together has huge benefits. Too often, we have our children only interacting with kids the exact same age – whether this is in their class or in extra-curricular activities. Younger kids learn amazing things from older children – and you will often be surprised at how a sensitive side can come out when an older child is playing with a younger child. Younger children will always look up to older children, and sometimes this admiration is hugely important to the older child. It is another source of positive reinforcement that all children thrive on.
+\n
+\n9. Completing an Act of Kindness makes you feel good. This good feeling happens whether you do something special for a friend or a stranger. You will feel good if the person knows that you did the Act of Kindness for them and thanks you for it, or even if you do an Act of Kindness for someone who will never know it was you.
+\n
+\n10. The person receiving your Act of Kindness will also feel good. And because something special was done for them, they will most likely feel so happy and grateful that they will complete an Act of Kindness for someone else that day. And then that person will complete an Act of Kindness for someone else. It can keep going on like that for the whole day. Your one Act of Kindness has the potential to snowball into many more Acts of Kindness and a general sense of happiness in your community.
+\n
+\nTENDER LOVING CARE: WATER AND SUNSHINE AND HOPE
+\n
+\nWater and sunshine and hope turned these idea seeds into a beautiful garden. My hopes for this app are high and mighty (but I figure that is what hopes should be).
+\n
+\nI hope that this app provides you with an easy to use guide to help you teach your children kindness, empathy, compassion, community involvement, leadership and engagement. I also hope that it helps you show your children, and remind yourself in the process, the importance of knowing your neighbours and building a community where it is understood that you will always be there for each other.
+\n
+\nI believe that everyone wants this type of friendly community. I think that many people are afraid to put themselves out there and make the first friendly move – and I hope that this app will give people the courage and some practical instructions to help them start building the community that they want to live in.
+
+        \n
+\nA GARDEN IN BLOOM: A VIBRANT COMMUNITY OF FRIENDS
+\n
+\nI have heard many parents remember their own childhood so fondly. They talk about how their time was less structured, kids were more innocent, and how they played outside all the time. Doors were always open and kids came and went throughout the neighbourhood. There were always parents watching out for all the kids. And then the parents sigh and resign themselves to the fact that their own children’s childhood could never be this way.
+\n
+\nI disagree. I think we can give our children all the great aspects of our childhood. We have the power. We can choose not to over schedule them with extra-curricular activities. We can choose to get them outside to run free. We can bring our neighbours together to create a strong, resilient community. We can build the community that will give our children a solid grounding and sense of security. A community where the kids know they are accepted and loved. This will allow our children to have the confidence to try new things and really push themselves to be the best they can be.
+\n
+\nI know this can be done, because I have seen it in my community. Nearly every Act of Kindness listed in this app has been completed by families in my neighbourhood – either by a friend surprising my family with the Act of Kindness, by my family completing the Act of Kindness for another family, or by someone completing an Act of Kindness for a complete stranger. And I have seen the positive effects on our children from being part of these Acts of Kindness, from being included in a community of friends.
+\n
+\nI do believe that it is the small Acts of Kindness that have the power to change the world. If we raise our children to also believe this, and they are able to practice this in a community of friends, with the knowledge that we will always take care of each other, imagine what our children will be able to do when they are the leaders and decision makers of the future. Imagine how they will be able to change the world.
+
+    \n
+        \n
+
+    </string>
+
+
+    <string name="howToUseAppInstructionTitle">How to Use this App</string>
+
+    <string name="howToUseAppInstruction">
+I have chosen to write this directly to you - the child reading it, the owner of this app. When there are tasks that will need the help of an adult – I will tell you to ask “your adults” to help. By “your adults,” I mean any important adult in your life – your mom, dad, grandparent, aunt, uncle, teacher, child care provider, older sibling, neighbour, and friend’s parent. It really does take a village to raise a child. Hopefully you, the owner of this app, have many adults that you can call on.
+\n
+\nI Have 3 Things to Tell You
+\n
+\n1. Choose Your 52 Acts of Kindness
+\n
+\nWe have included 75 Acts of Kindness in this app so that you will have lots of choice. Some of them are easy and some are a bit more complicated. Some will be of interest to you and some will not seem as fun. That is okay. It is our hope that you can complete 52 Acts of Kindness - one each week for the whole year.
+\n
+\n2. Make a List of New Friends
+\n
+\nMany of these Acts of Kindness provide great opportunities to meet new friends. We have included a new friend symbol on the Acts of Kindness that encourage the making of new friends.
+\n
+\nWe have also included a “Friends List”. This list will allow you to record, and therefore remember, the names of the new friends that you meet. You should also write down their phone number or email address. Reaching out to invite them to join you somewhere another day is how you create community.
+\n
+\n3. Always Remember That You Are Doing Important Work
+\n
+\nBefore you begin building your community of friends, we did want to mention that there is a small chance that someone who you try to do an Act of Kindness for might not react with happiness and gratitude. While this can be a bit discouraging, I promise you that the majority of people will be overjoyed by your actions.
+\n
+\nYou always have to remember, for those few times that people don’t react positively, that this has nothing to do with you. Maybe these people are not used to receiving kindness. Maybe they are not sure how to react. Maybe they are afraid to accept this kindness.
+\n
+\nThis is exactly why we need to complete these Acts of Kindness in our communities. We need to make kindness a regular occurrence so that people are not afraid to accept friendship from strangers.
+\n
+\nSo if you ever experience someone not reacting with happiness and gratitude to your Act of Kindness, do not get discouraged, do not give up. That person is exactly the type of person who needs to receive
+\n
+\nthe Act of Kindness, so that they can be reminded what a community of friends would feel like and how it would make their life so much fuller.
+\n
+\nAnd with the important instructions completed … there is only one last thing to say … Good luck my fantastic world-changing kids – I know that you can create a beautiful community of friends in your neighbourhood!
+    </string>
+
+
+    <!-- Select Profile Page-->
+    <string name="profile1Name">Profile 1</string>
+    <string name="profile4Name">Profile 4</string>
+    <string name="addProfileString">Add Profile</string>
+    <string name="profile3Name">Profile 3</string>
+    <string name="profile2Name">Profile 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

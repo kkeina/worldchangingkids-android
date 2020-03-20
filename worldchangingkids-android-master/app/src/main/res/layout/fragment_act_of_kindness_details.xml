@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/card_body_2">
+
+        <TextView
+            android:id="@+id/text_view_aok_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="@string/placeholder_short"
+            android:fontFamily="@font/justthewayyouare"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_view_aok_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/centurygothic"
+            android:text="@string/placeholder_long"
+            android:layout_below="@+id/text_view_aok_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_aok_title"/>
+
+        <EditText
+            android:id="@+id/edit_text_aok_notes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="30dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="@string/aok_details_notes_hint"
+            android:layout_below="@+id/text_view_aok_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_aok_question"/>
+
+        <ImageView
+            android:id="@+id/image_view_play_pause_media"
+            android:layout_width="100dp"
+            android:layout_height="119dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/audio_button"
+            android:layout_below="@+id/edit_text_aok_notes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_aok_notes" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_act_of_kindness_done"
+            android:checked="false"
+            android:textOn=""
+            android:textOff=""
+
+            android:layout_below="@+id/edit_text_aok_notes"
+            android:layout_toRightOf="@+id/image_view_play_pause_media"
+            app:layout_constraintStart_toEndOf="@+id/image_view_play_pause_media"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_aok_notes"/>
+
+        <ImageButton
+            android:id="@+id/button_close_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_activity_hide_nav_bar"
+            android:background="#ff7f7f"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.9"
+            android:layout_below="@+id/edit_text_aok_notes"
+            android:layout_toRightOf="@+id/toggle_button_done"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_aok_notes"/>
+
+    </android.widget.RelativeLayout>
+
+</ScrollView>
+

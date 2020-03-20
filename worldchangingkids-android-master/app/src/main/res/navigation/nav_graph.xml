@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.world_changingkids.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_ProfileSelection"
+            app:destination="@id/profileSelectionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileSelectionFragment"
+        android:name="com.world_changingkids.fragments.ProfileSelectionFragment"
+        android:label="fragment_profile_selection"
+        tools:layout="@layout/fragment_profile_selection"/>
+    <action
+        android:id="@+id/action_ProfileSelection_to_AddProfile"
+        app:destination="@id/addProfileFragment" />
+
+    <action
+        android:id="@+id/action_ProfileSelection_to_EditProfile"
+        app:destination="@id/profileEditInformation" />
+
+    <action
+        android:id="@+id/action_ProfileSelection_to_HomePage"
+        app:destination="@id/homeFragment" />
+
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.world_changingkids.fragments.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account"/>
+
+    <fragment
+        android:id="@+id/profileEditInformation"
+        android:name="com.world_changingkids.fragments.ProfileEditInformation"
+        android:label="fragment_profile_edit_information"
+        tools:layout="@layout/fragment_profile_edit_information" />
+    <action
+        android:id="@+id/action_profileEditInformation_to_selectProfile"
+        app:destination="@id/profileSelectionFragment" />
+
+    <fragment
+        android:id="@+id/addProfileFragment"
+        android:name="com.world_changingkids.fragments.AddProfileFragment"
+        android:label="fragment_add_profile"
+        tools:layout="@layout/fragment_add_profile"/>
+
+    <action
+        android:id="@+id/action_AddProfile_to_ProfileSelection"
+        app:destination="@id/profileSelectionFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.world_changingkids.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/actsOfKindnessListFragment"
+        android:name="com.world_changingkids.fragments.ActsOfKindnessListFragment"
+        android:label="fragment_acts_of_kindness_list"
+        tools:layout="@layout/fragment_acts_of_kindness_list"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.world_changingkids.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_addProfileFragment"
+            app:destination="@id/addProfileFragment" />
+    </fragment>
+
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment"/><action android:id="@+id/action_global_profileFragment" app:destination="@id/profileFragment"/><action android:id="@+id/action_global_actsOfKindnessListFragment" app:destination="@id/actsOfKindnessListFragment"/>
+
+</navigation>
