@@ -188,6 +188,7 @@ I have chosen to write this directly to you - the child reading it, the owner of
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_select_avatar">Please Select Avatar</string>
 
 
 </resources>

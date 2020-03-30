@@ -39,6 +39,7 @@
         app:layout_constraintHorizontal_bias="0.584"
         app:layout_constraintStart_toEndOf="@+id/imageView3" />
 
+    <!--android:text="@string/app_name"-->
     <TextView
         android:id="@+id/proTxtNameTab"
         android:layout_width="wrap_content"
@@ -46,8 +47,8 @@
         android:layout_marginStart="56dp"
         android:layout_marginLeft="56dp"
         android:layout_marginTop="32dp"
-        android:text="@string/app_name"
         android:textSize="20dp"
+        android:text=""
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />

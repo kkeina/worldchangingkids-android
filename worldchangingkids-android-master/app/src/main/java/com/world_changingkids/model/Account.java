@@ -56,6 +56,9 @@ public class Account {
 		return mProfiles.get(currentProfile);
 	}
 
+	public Integer getProfilePosition(){
+		return currentProfile;
+	}
 	public void setProfilePosition(int currentProfile){
 		this.currentProfile = currentProfile;
 	}

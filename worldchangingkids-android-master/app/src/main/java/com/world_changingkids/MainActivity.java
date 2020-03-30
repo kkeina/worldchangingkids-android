@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.world_changingkids.fragments.ProfileFragment;
 import com.world_changingkids.model.Account;
 import com.world_changingkids.model.ActsOfKindnessCollection;
 import com.world_changingkids.model.Profile;
@@ -31,10 +32,13 @@ import android.content.Intent;
  */
 public class MainActivity extends AppCompatActivity {
 
+    public static boolean check = false;
+    public static int selectedImage = 0;
 	/**
 	 * Navigation controller to navigate pages
 	 */
 	private NavController mNavController;
+	private NavHostFragment  mNavHost;
 	/**
 	 * FirebaseAuth to handle user authentication
 	 */
@@ -92,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 				.findFragmentById(R.id.nav_host_fragment))
 				.getNavController();
 
+        mNavHost=((NavHostFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.nav_host_fragment));
 		mBottomContainer = findViewById(R.id.bottom_button_container);
 
 		mFirebaseAuth = FirebaseAuth.getInstance();
@@ -153,6 +159,15 @@ public class MainActivity extends AppCompatActivity {
 		}
 	}
 
+	public void updateCornerProfileButton(Integer id){
+        mCornerProfileButton.setImageResource(id);
+        onBackPressed();
+        check = true;
+        selectedImage = id;
+        if (mNavHost.getChildFragmentManager().getFragments().get(0) instanceof ProfileFragment){
+            ((ProfileFragment) mNavHost.getChildFragmentManager().getFragments().get(0)).updateAvatar(id);
+        }
+    }
 	/**
 	 *updateCornerProfile avatar based on profile's data
 	 * @param source

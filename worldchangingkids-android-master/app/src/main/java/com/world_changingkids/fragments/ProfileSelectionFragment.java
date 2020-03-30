@@ -165,6 +165,7 @@ public class ProfileSelectionFragment extends Fragment {
 		PROFILE1.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				MainActivity.check=false;
 				((MainActivity)getActivity()).getActiveAccount().setProfilePosition(0);
 				((MainActivity)getActivity()).setProfileDocumentReference(profileID[0]);
 				((MainActivity)getActivity()).updateCornerProfileButton(PROFILE1.getBackground());
@@ -174,6 +175,7 @@ public class ProfileSelectionFragment extends Fragment {
 		PROFILE2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				MainActivity.check=false;
 				((MainActivity)getActivity()).getActiveAccount().setProfilePosition(1);
 				((MainActivity)getActivity()).setProfileDocumentReference(profileID[1]);
 				((MainActivity)getActivity()).updateCornerProfileButton(PROFILE2.getBackground());
@@ -183,6 +185,7 @@ public class ProfileSelectionFragment extends Fragment {
 		PROFILE3.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				MainActivity.check=false;
 				((MainActivity)getActivity()).getActiveAccount().setProfilePosition(2);
 				((MainActivity)getActivity()).setProfileDocumentReference(profileID[2]);
 				((MainActivity)getActivity()).updateCornerProfileButton(PROFILE3.getBackground());
@@ -192,6 +195,7 @@ public class ProfileSelectionFragment extends Fragment {
 		PROFILE4.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				MainActivity.check=false;
 				((MainActivity)getActivity()).getActiveAccount().setProfilePosition(3);
 				((MainActivity)getActivity()).setProfileDocumentReference(profileID[3]);
 				((MainActivity)getActivity()).updateCornerProfileButton(PROFILE4.getBackground());

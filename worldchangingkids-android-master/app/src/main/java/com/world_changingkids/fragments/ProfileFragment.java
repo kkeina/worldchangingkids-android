@@ -1,6 +1,7 @@
 package com.world_changingkids.fragments;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.world_changingkids.MainActivity;
 import com.world_changingkids.R;
@@ -27,7 +32,11 @@ public class ProfileFragment extends Fragment {
 	private Profile profile;
 	private TextView level;
 	private ImageView avatar;
-
+	private ImageView proBtnCustom;
+	/**
+	 * Navigation controller
+	 */
+	private NavController mNavController;
 
 	/**
 	 * Required empty public constructor
@@ -78,7 +87,10 @@ public class ProfileFragment extends Fragment {
 		proBar = view.findViewById(R.id.proProgressBar);
 		level =view.findViewById(R.id.proTxtName);
 		avatar = view.findViewById(R.id.proImgAvatar);
-
+		proBtnCustom = view.findViewById(R.id.proBtnCustom);
+		mNavController = ((NavHostFragment) getActivity().getSupportFragmentManager()
+				.findFragmentById(R.id.nav_host_fragment))
+				.getNavController();
 		profile = ((MainActivity)getActivity()).getActiveAccount().retrieveProfile();
 		int sum =0;
 		for(ActOfKindness a: profile.getActsOfKindnessCollection().getActsOfKindnessList()){
@@ -96,11 +108,29 @@ public class ProfileFragment extends Fragment {
 		String accID  = ((MainActivity) getActivity()).getAccountDocID();
 
 		//set avatar
-		setAvatar(profile.getGrade());
-
-
+//		new Handler().postDelayed(new Runnable() {
+//			@Override
+//			public void run() {
+//
+//			}
+//		},100);
+		if (MainActivity.check){
+			updateAvatar(MainActivity.selectedImage);
+		}
+		else {
+			setAvatar(profile.getGrade());
+		}
+		proBtnCustom.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				mNavController.navigate(R.id.action_select_avatar);
+			}
+		});
 	}
 
+	public void updateAvatar(Integer id){
+		avatar.setImageResource(id);
+	}
 	/**
 	 * Set avatar for profile
 	 * @param index
